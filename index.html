@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jason — Portfolio</title>
+  <meta name="description" content="A personal portfolio showcasing who I am, my technical and soft skills, and a playful mini game." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#home">Jason</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌗</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Who I am</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">My journey</a></li>
+        <li><a href="#photo">Photo</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#game">Mini Game</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="hero-content">
+        <h1>Hi, I’m <span class="accent">Owami Jason Duma</span></h1>
+        <p class="subtitle">Aspiring developer—curious, methodical, and building momentum.</p>
+        <div class="cta">
+          <a class="btn primary" href="#skills">Explore my skills</a>
+          <a class="btn ghost" href="#game">Play the mini game</a>
+        </div>
+      </div>
+      
+      <div class="hero-art" aria-hidden="true">
+  <!-- memoji image above orb -->
+  <img src="memoji.png" alt="Owami Jason Duma" class="memoji-img" />
+
+  <!-- decorative orb -->
+  <div class="orb"></div>
+
+  <!-- grid accent -->
+  <div class="soft-grid"></div>
+</div>
+      </div>
+      
+
+ 
+    </section>
+
+    <!-- Who I Am -->
+    <section id="about" class="section">
+      <h2>Who am I?</h2>
+      <p>
+        I’m driven by curiosity and the satisfaction of solving real problems. I learn fast, iterate with intention,
+        and care deeply about clarity and maintainability. I don’t have public projects yet—this site is the start of
+        sharing my journey openly and building things that matter.
+      </p>
+      <blockquote>
+        “Start where you are. Use what you have. Do what you can.”
+      </blockquote>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Technical skills</h3>
+          <ul class="tag-list">
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">Python</li>
+            <li class="tag">Git</li>
+            <li class="tag">Responsive design</li>
+            <li class="tag">Automation basics</li>
+            <li class="tag">SQL</li>
+            <li class="tag">PowerBI</li>
+            <li class="tag">ASP.Net</li>
+          </ul>
+          <p class="note">
+            I focus on clean structure, accessible UI, and thoughtful interaction and still sharpening my programming skills 
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Soft skills</h3>
+          <ul class="tag-list">
+            <li class="tag">Communication</li>
+            <li class="tag">Problem solving</li>
+            <li class="tag">Ownership</li>
+            <li class="tag">Adaptability</li>
+            <li class="tag">Empathy</li>
+            <li class="tag">Collaboration</li>
+          </ul>
+          <p class="note">
+            I'm a very empathetic person that values teamwork and transparency to reach a commmon goal
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey / No Projects Yet -->
+    <section id="journey" class="section">
+      <h2>My project</h2>
+      <p>
+        <!-- Three horizontal blocks with Option B colors + hover tilt (inline CSS + JS) -->
+<div id="portfolioRow" style="display:flex;gap:18px;align-items:stretch;justify-content:center;flex-wrap:wrap;margin:24px 12px;perspective:1200px;">
+  <!-- Card 1 -->
+  <article class="tilt-card" tabindex="0"
+           style="flex:1 1 30%;min-width:240px;
+                  background:linear-gradient(180deg,#0f1724 0%, #0b1220 100%);
+                  color:#e6eef6;border-radius:12px;padding:18px;
+                  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+                  border:1px solid rgba(255,255,255,0.02);
+                  border-left:4px solid #00d1ff;
+                  display:flex;flex-direction:column;justify-content:space-between;
+                  transition:transform 300ms cubic-bezier(.2,.9,.2,1), box-shadow 300ms, filter 300ms;
+                  transform-style:preserve-3d;will-change:transform;">
+    <div>
+      <h3 style="margin:0 0 8px;font-size:1.05rem;">Site One</h3>
+      <p style="margin:0;color:#9aa4b2;font-size:0.95rem;">A responsive, trust‑building web solution that streamlines emergency service requests and bookings by combining clear service pages, transparent pricing and estimates, a visual project gallery, client testimonials, and one‑tap contact (call/WhatsApp) to convert visitors into customers.</p>
+    </div>
+    <div style="margin-top:14px;display:flex;gap:8px;align-items:center;">
+      <a href="https://www.dmplumbingmultipurpose.co.za/" target="_blank" rel="noopener" style="background:linear-gradient(90deg,#00d1ff,#00a6d9);color:#02101a;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,0.5);">Visit</a>
+      <a href="#case1" style="color:#9aa4b2;text-decoration:none;font-weight:600;padding:6px 8px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);"></a>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="tilt-card" tabindex="0"
+           style="flex:1 1 30%;min-width:240px;
+                  background:linear-gradient(180deg,#0f1724 0%, #0b1220 100%);
+                  color:#e6eef6;border-radius:12px;padding:18px;
+                  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+                  border:1px solid rgba(255,255,255,0.02);
+                  border-left:4px solid #00d1ff;
+                  display:flex;flex-direction:column;justify-content:space-between;
+                  transition:transform 300ms cubic-bezier(.2,.9,.2,1), box-shadow 300ms, filter 300ms;
+                  transform-style:preserve-3d;will-change:transform;">
+    <div>
+      <h3 style="margin:0 0 8px;font-size:1.05rem;">Site Two</h3>
+      <p style="margin:0;color:#9aa4b2;font-size:0.95rem;">Responsive, patient‑first site that simplifies bookings and intake while securely recording patient information in the backend for streamlined scheduling and follow‑up.</p>
+    </div>
+    <div style="margin-top:14px;display:flex;gap:8px;align-items:center;">
+      <a href="https://jasonsoftdev.github.io/dentist/" target="_blank" rel="noopener" style="background:linear-gradient(90deg,#00d1ff,#00a6d9);color:#02101a;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,0.5);">Visit</a>
+      <a href="#case2" style="color:#9aa4b2;text-decoration:none;font-weight:600;padding:6px 8px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);"></a>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="tilt-card" tabindex="0"
+           style="flex:1 1 30%;min-width:240px;
+                  background:linear-gradient(180deg,#0f1724 0%, #0b1220 100%);
+                  color:#e6eef6;border-radius:12px;padding:18px;
+                  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+                  border:1px solid rgba(255,255,255,0.02);
+                  border-left:4px solid #00d1ff;
+                  display:flex;flex-direction:column;justify-content:space-between;
+                  transition:transform 300ms cubic-bezier(.2,.9,.2,1), box-shadow 300ms, filter 300ms;
+                  transform-style:preserve-3d;will-change:transform;">
+    <div>
+      <h3 style="margin:0 0 8px;font-size:1.05rem;">Site Three</h3>
+      <p style="margin:0;color:#9aa4b2;font-size:0.95rem;">A mobile‑responsive visual analytics dashboard that pulls live crypto and stock data from public APIs and turns it into charts and KPI cards for fast, data‑driven insights.
+</p>
+    </div>
+    <div style="margin-top:14px;display:flex;gap:8px;align-items:center;">
+      <a href="https://jasonsoftdev.github.io/market/" target="_blank" rel="noopener" style="background:linear-gradient(90deg,#00d1ff,#00a6d9);color:#02101a;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,0.5);">Visit</a>
+      <a href="#case3" style="color:#9aa4b2;text-decoration:none;font-weight:600;padding:6px 8px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);"></a>
+    </div>
+  </article>
+</div>
+
+<!-- Inline JS: dynamic tilt on mouse move + subtle hover scale for keyboard focus -->
+<script>
+  (function () {
+    const cards = document.querySelectorAll('.tilt-card');
+
+    cards.forEach(card => {
+      // hover enter: stronger shadow
+      card.addEventListener('mouseenter', () => {
+        card.style.transition = 'transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms';
+        card.style.boxShadow = '0 28px 80px rgba(0,0,0,0.75)';
+      });
+
+      // pointer-based tilt
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const px = (e.clientX - rect.left) / rect.width;   // 0..1
+        const py = (e.clientY - rect.top) / rect.height;   // 0..1
+        const rotateY = (px - 0.5) * 12; // left/right tilt
+        const rotateX = (0.5 - py) * 8;  // up/down tilt
+        const scale = 1.02;
+        card.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(${scale})`;
+      });
+
+      // reset on leave
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.boxShadow = '0 10px 30px rgba(0,0,0,0.6)';
+        card.style.transition = 'transform 600ms cubic-bezier(.2,.9,.2,1), box-shadow 600ms';
+      });
+
+      // keyboard accessibility: small tilt on focus
+      card.addEventListener('focus', () => {
+        card.style.transform = 'perspective(1200px) rotateX(4deg) rotateY(-6deg) scale(1.02)';
+        card.style.boxShadow = '0 28px 80px rgba(0,0,0,0.75)';
+      });
+      card.addEventListener('blur', () => {
+        card.style.transform = '';
+        card.style.boxShadow = '0 10px 30px rgba(0,0,0,0.6)';
+      });
+
+      // ensure no lingering transform if pointer leaves quickly
+      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+  })();
+</script>
+      </p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div>
+            <h4>Now</h4>
+            <p>I am sharpening my technical skills and actively pursuing an internship to complete my workplace modules and gain hands‑on experience; my immediate focus is to apply classroom learning in a real work environment, build practical competence, and establish professional routines that prepare me for full‑time responsibilities.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div>
+            <h4>Next</h4>
+            <p>With a stronger technical foundation, I will pursue career progression by taking on increasingly challenging projects, demonstrating consistent performance and resilience, and seeking mentorship and leadership opportunities that position me to climb the corporate ladder through hard work, persistence, and principled confidence </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div>
+            <h4>Soon</h4>
+            <p>I plan to launch entrepreneurial ventures that address real‑world problems, using technology to increase accessibility and create measurable social impact, while leveraging the skills, networks, and industry insight I’ve developed to build sustainable, user‑centered solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo -->
+    <section id="photo" class="section">
+      <h2>More about me</h2>
+      <div class="photo-card">
+        <img src="first.jpg" alt="Portrait of Jason" />
+        <div class="photo-meta">
+          <p>I’m a developer who thrives on the creative process — turning ideas into intuitive, visually engaging experiences. My focus leans toward frontend development and data analytics, where design meets insight and every detail shapes how people interact with technology. I enjoy exploring new tools and frameworks that make complex information clear and accessible.</p>
+          <p> Oh and I really like music XD</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Prefer quick links? Reach me directly using one of the options below.</p>
+
+      <div class="contact-links">
+        <!-- Replace placeholders with your real values -->
+        <a class="contact-link phone" href="tel:+27679587473" aria-label="Call Jason"> Contact number<b>+27679587473</a>
+        <a class="contact-link email" href="mailto:jasonduma8@gmail.com" aria-label="Email Jason"> Email <b>jasonduma8@gmail.com</b></a>
+        <a class="contact-link whatsapp" href="https://wa.me/27679587473" target="_blank" rel="noopener" aria-label="WhatsApp Jason"> WhatsApp <b>067 958 7473</b> </a>
+      </div>
+    </section>
+
+    <!-- Mini Game -->
+    <section id="game" class="section game-section">
+      <h2>Mini game: Star catcher</h2>
+      <p>
+        Move the paddle with left/right arrows or A/D. Catch falling stars. Miss three and it’s game over.
+      </p>
+      <div class="game-container">
+        <canvas id="gameCanvas" width="480" height="680" aria-label="Star catcher game"></canvas>
+        <div class="hud">
+          <span>Score: <strong id="score">0</strong></span>
+          <span>Misses: <strong id="misses">0</strong>/3</span>
+          <button class="btn" id="restartBtn">Restart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="time"></span> Jason.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
